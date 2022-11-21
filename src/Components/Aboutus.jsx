@@ -1,6 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import aboutus from './Images/aboutus.jpg'
+import Aos from 'aos'
+import "aos/dist/aos.css";
+
+
+
 const Aboutus = () => {
+
+
+useEffect(() => {
+  Aos.init({duration:2000});
+}, []);
+
   return (
     <div id='aboutus'>
       <div className='container-fluid color-for-container'>
@@ -18,7 +29,10 @@ const Aboutus = () => {
               <img src={aboutus} alt="anoutus" className='img-fluid image-size-about img-load zoom ' />
             </center>
           </div>
-          <div className='col-md-6 text-white'>
+          <div  className='col-md-6 text-white' >
+
+          <div data-aos="fade-up" >
+
             <p className=" font-size-slider2 mt-4"> LEARN MORE ABOUT <span className='text-white'>US</span></p>
     
             <p className="gap h5">Leorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>
@@ -29,6 +43,7 @@ const Aboutus = () => {
               auctor malesuada erat. Maecenas tempor, felis non interdum<br></br>
               Nulla eu semper diam, congue consectetur ipsum.</p><br></br>
               <button className='button-cover simple-button zoom'>Know More</button>
+          </div>
 
           </div>
           

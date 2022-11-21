@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
                     </div>
                    <br></br>
                    <div className='wrap'>
-                    <button className='button'>JOIN US</button>
+                    <Link className='button' to="contact">JOIN US</Link>
                    </div>
                 </center>
             </div>
